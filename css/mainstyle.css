@@ -1,0 +1,106 @@
+:root{
+    --corIndexBG:background: rgb(2,0,36);
+    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(30,120,168,1) 71%, rgba(14,159,207,1) 86%, rgba(0,212,255,1) 100%);
+    --corFundo01:#FFF8E8;
+    --corFundo02: #AAB396;
+    --corFundo03: #F7EED3;
+    --fonteCor1: #674636;
+    --fonteCor2: #ECDFCC;
+    --corBtn1: #0B8494;
+    --corBtn2: #18ab95;
+}
+.card-title{
+    max-width: 1fr;
+    /* font-size: 35px !important; */
+}
+.card{
+    /* background-color: aquamarine; */
+    margin: 1%;
+    width: 98%;
+    background-color: var(--fonteCor1);
+    color: var(--fonteCor2);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.grid{
+    /* display: grid;
+    justify-content: space-between;
+    flex: 1 0 25%;
+    margin: 1%;
+    padding: 10px;
+    /* border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--corFundo01);
+    color: var(--fonteCor1);
+}
+body p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+header {
+    margin: 35px;
+    padding: 35px;
+}
+header h1 {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+}
+header p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn-primary {
+    border: 2px solid var(--corBtn2);
+    background-color: var(--corBtn1);
+}
+.container .card:hover{
+    transform: scale(1.15);
+    transition: 0.5s ease-in-out;
+}
+.btn-primary:hover{
+    color: var(--corFundo01);
+    background-color: var(--corBtn2);
+    border: 2px solid var(--corBtn1);
+}
+.container .row h2{
+    border-bottom: 2px solid var(--corFundo03) !important;
+}
+footer{
+    /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px; */
+    padding: 35px;
+    background-color: var(--fonteCor1);
+    color: var(--fonteCor2);
+}
+.carousel-caption{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--fonteCor2);
+}
+.carousel-inner img{
+    max-height: 75vh !important;
+}
+.background-type{
+    background-color: var(--corFundo02);
+    color: #3C3D37;
+}
