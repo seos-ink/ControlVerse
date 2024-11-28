@@ -1,4 +1,4 @@
-***Nota do Autor:***
+## Nota do Autor:
 Olá, bem vindo ao Game Rocket!
 
 O Game Rocket surgiu como um projeto que eu fiz durante uma aula de programação web no início do ano (2024).
