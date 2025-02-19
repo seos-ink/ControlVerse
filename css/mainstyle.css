@@ -1,10 +1,9 @@
 :root{
-    --corIndexBG:background: rgb(2,0,36);
-    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(30,120,168,1) 71%, rgba(14,159,207,1) 86%, rgba(0,212,255,1) 100%);
-    --corFundo01:#FFF8E8;
+    --corIndexBG: #143D60;
+    --corFundo01:#27667B;
     --corFundo02: #AAB396;
     --corFundo03: #F7EED3;
-    --fonteCor1: #674636;
+    --fonteCor1: #EFE9D5;
     --fonteCor2: #ECDFCC;
     --corBtn1: #0B8494;
     --corBtn2: #18ab95;
@@ -15,35 +14,27 @@
 }
 .card{
     /* background-color: aquamarine; */
-    margin: 1%;
-    width: 98%;
-    background-color: var(--fonteCor1);
+    margin: 12px;
+    background-color: var(--corFundo01);
     color: var(--fonteCor2);
 }
 .container {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
 }
-.grid{
-    /* display: grid;
+.row{
+    display: flex;
     justify-content: space-between;
-    flex: 1 0 25%;
-    margin: 1%;
-    padding: 10px;
-    /* border: 1px solid #ccc;
-    border-radius: 25px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
 }
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--corFundo01);
+    background-color: var(--corIndexBG);
     color: var(--fonteCor1);
 }
 body p{
@@ -56,46 +47,48 @@ body p{
     flex-direction: column;
 }
 header {
-    margin: 35px;
-    padding: 35px;
+    margin: 25px;
+    padding: 15px;
 }
 header h1 {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+}
+.IndexHeader h1 {
     font-size: 75px;
     display: flex;
     justify-content: center;
 }
-header p{
+/* header p{
     font-size: 20px;
     display: flex;
     justify-content: center;
-}
+} */
 .btn-primary {
     border: 2px solid var(--corBtn2);
     background-color: var(--corBtn1);
-}
-.container .card:hover{
-    transform: scale(1.15);
-    transition: 0.5s ease-in-out;
 }
 .btn-primary:hover{
     color: var(--corFundo01);
     background-color: var(--corBtn2);
     border: 2px solid var(--corBtn1);
 }
-.container .row h2{
-    border-bottom: 2px solid var(--corFundo03) !important;
+section h2{
+    padding-left: 15px;
+    border-bottom: 2px solid var(--corFundo03);
 }
 footer{
     /* border-top-left-radius: 25px;
     border-top-right-radius: 25px; */
     padding: 35px;
-    background-color: var(--fonteCor1);
-    color: var(--fonteCor2);
+    background-color: var(--corFundo01);
+    color: var(--corFundo03);
 }
 .carousel-caption{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    color: var(--fonteCor2);
+    color: var(--corFundo01);
 }
 .carousel-inner img{
     max-height: 75vh !important;
