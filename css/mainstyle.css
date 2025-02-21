@@ -15,8 +15,16 @@
 .card{
     /* background-color: aquamarine; */
     margin: 12px;
+    min-height: 500px;
     background-color: var(--corFundo01);
     color: var(--fonteCor2);
+}
+.cardNoticia{
+    padding: 12px;
+    background-color: #001d7abe;
+    color: var(--fonteCor2);
+    border: #05223b solid 3.5px;
+    border-radius: 25px;
 }
 .container {
     display: flex;
@@ -47,7 +55,7 @@ body p{
     flex-direction: column;
 }
 header {
-    margin: 25px;
+    margin: 15px;
     padding: 15px;
 }
 header h1 {
@@ -55,10 +63,55 @@ header h1 {
     display: flex;
     justify-content: center;
 }
+.nav-item:hover{
+    transition: 0.5s;
+    /* transform: scale(1.2); */
+    border-bottom: 1px var(--corFundo03) solid;
+}
 .IndexHeader h1 {
     font-size: 75px;
     display: flex;
     justify-content: center;
+}
+.NoticiaHeader{
+    display: flex;
+    justify-content: center;
+    margin: 15px !important;
+    padding: 15px !important;
+}
+@media screen and (max-width: 1263px){
+    .NoticiaHeader {
+        display: block;
+    }
+    section h2{
+        font-size: 25px !important;
+    }
+    .image-block img{
+        width: 750px;
+    }
+    .video-holder{
+        
+    }
+}
+@media screen and (max-width: 752px){
+    .image-block img{
+        width: 550px;
+    }
+    .video-holder{
+        display: flex;
+        width: 600px;
+    }
+    
+}
+@media screen and (max-width: 552px){
+    .image-block img{
+        width: 350px;
+    }
+    .video-holder h5{
+        /* display: block; */
+        width: 350px;
+    }
+    
 }
 /* header p{
     font-size: 20px;
@@ -71,7 +124,7 @@ header h1 {
 }
 .btn-primary:hover{
     color: var(--corFundo01);
-    background-color: var(--corBtn2);
+    background-color: var(--corFundo03);
     border: 2px solid var(--corBtn1);
 }
 section h2{
