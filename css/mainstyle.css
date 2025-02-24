@@ -89,26 +89,35 @@ header h1 {
     .image-block img{
         width: 750px;
     }
-    .video-holder{
+    .video-baseline{
         
+    }
+}
+@media screen and (max-width: 1150px){
+    .image-block img{
+        width: 650px;
+    }
+    .video-baseline{
+        display: block;
+        width: 700px;
     }
 }
 @media screen and (max-width: 752px){
     .image-block img{
         width: 550px;
     }
-    .video-holder{
-        display: flex;
+    .video-baseline{
+        display: block;
         width: 600px;
     }
     
 }
-@media screen and (max-width: 552px){
+@media screen and (max-width: 678px){
     .image-block img{
         width: 350px;
     }
-    .video-holder h5{
-        /* display: block; */
+    .video-baseline{
+        display: block;
         width: 350px;
     }
     
