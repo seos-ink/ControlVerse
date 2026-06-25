@@ -1,1 +1,2 @@
-New Interface CtrlVer - Work In Progress
+The ControlVerse website is being rebuilt as "theAnalyser";
+This legacy version won't recieve any update, but the ControlVerse Project will return. Someday. I hope so...
